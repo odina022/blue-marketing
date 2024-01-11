@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    padding: 0 15px ;
+    margin: auto;
+}
+.btn{
+    background: #3FA5DF;
+    box-shadow:0px 3px 10px rgba(0, 0, 0, 0.3) ;
+    border-radius: 30px;
+    max-width: 211px;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    transition: 3s;
+}
+.btn:hover{
+    background: #2A86B1;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+body {
+    font-family: 'Rubik';
+}
+/* header start */
+.header {
+    padding: 30px 0;
+
+
+}
+.header__content{
+    background: url(../img/photo_2022-10-17_17-26-38.jpg) rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 62px;
+    row-gap: 25px;
+}
+.header__title{
+    font-weight: 700;
+    font-size: 50px;
+    color: #464748;
+    max-width: 332px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+.header__title::before{
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 100px;
+    height: 50px;
+    background: #3FA5DF;
+    z-index: -1;
+}
+.header__text{
+    color: #69696868;
+    font-size: 16px;
+    font-weight: 400;
+    list-style: 19px;
+    max-width: 314px;
+    width: 100%;
+}
+.skills {
+    padding-bottom: 48px;
+}
+.skills__cards {
+    display: flex;
+    justify-content: space-between;
+}
+.skills__card {
+    max-width: 255;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 32px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 65px;
+}
+.skills__card-title {
+    color: #2A86B1;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 24px;
+}
+.skills__card-icon {
+    color: #2A85B1;
+}
+.news {
+    padding-bottom: 44px;
+}
+.news__content {
+    display: flex;
+    justify-content: center;
+}
+.news__content-text {
+     max-width: 825px;
+     width: 100%;
+     color: #545454;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 19px;
+     text-align: justify;
+     background: white;
+     margin-bottom: 15px;
+     padding: 15px;
+     border-radius: 8px;
+
+}
+.news__content-tite {
+    color: #686868;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 22px 15px;
+}
+.news__content-new {
+    max-width: 255px;
+    width: 100%;
+    background: white;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    column-gap: 15px;
+}
+.news__content-image {
+    object-fit: cover;
+    border-radius: 50%;
+}
+.news__content__item-title {
+    font-weight: 400;
+    font-size: 17px;
+    color: #323232;
+    margin-bottom: 5px;
+}
+.news__content__item-text {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 13px;
+}
+.footer {
+    background: #3FA5D5;
+    padding: 40px 0;
+
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    row-gap: 15px;
+}
+.footer__tel {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer__email {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.nav {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 100px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.nav:hover {
+    width: 220px;
+}
+.nav__logo {
+    padding-left: 20px;
+
+}
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+    padding: 0 30px;
+}
+.nav__link {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #939393;
+    transition: .5s;
+}
+.nav__link:hover {
+    color: #2A86B1;
+}
+.nav__ava {
+     margin-left: 15px;
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     object-fit: cover;
+}
